@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 600px;
+}
+
+h1 {
+  color: #00ff99;
+}
+
+.score-board {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 90px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.card .front {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.card .front img {
+  width: 60px;
+  height: 60px;
+}
+
+.card .back {
+  background: #00ff99;
+  transform: rotateY(0deg);
+}
+
+.card.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00ff99;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.restart-btn:hover {
+  background: #00cc77;
+}

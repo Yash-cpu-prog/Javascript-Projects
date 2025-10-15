@@ -1,0 +1,62 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #292929);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player {
+  background: #121212;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+h1 {
+  color: #00ff99;
+}
+
+.music-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(0,255,153,0.3);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background: #00ff99;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+#title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#artist {
+  font-size: 14px;
+  color: #00cc77;
+}
